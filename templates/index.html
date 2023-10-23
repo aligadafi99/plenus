@@ -1,0 +1,731 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Plenus || Homepage</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/kenya.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home'%}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>PLENUS</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'home'%}" class="active">Home</a></li>
+          <li><a href="{% url 'home' %}">About</a></li>
+          <li><a href="{% url 'home'%}">Therapist</a></li>
+          <li><a href="{% url 'home'%}">Book Session</a></li>
+          <li class="dropdown"><a href="{% url 'home'%}"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Guidance</a></li>
+              <li class="dropdown"><a href="#"><span>Sex Education</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="{% url 'home'%}">Adolescents</a></li>
+                  <li><a href="{% url 'home'%}">Underage</a></li>
+                  <li><a href="{% url 'home'%}">Schizophrenia</a></li>
+                  <li><a href="{% url 'home'%}">Job loss</a></li>
+                  <li><a href="{% url 'home'%}">Depressive disorders</a></li>
+                </ul>
+              </li>
+              <li><a href="{% url 'home'%}">Depression</a></li>
+              <li><a href="{% url 'home'%}">Mental Disorders</a></li>
+              <li><a href="{% url 'home'%}">Suicide</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'signUp'%}">SignUp</a></li>
+          <li><a class="get-a-quote" href="{% url 'login'%}">Login</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Couseling can help you overcome depression</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Plenus is a web appliaction whose main purpose is tor improve the mental health of people everywhere. Mental Health is an important and relevant topic thta deserves everyones attention and understanding</p>
+
+          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" class="form-control" placeholder="ZIP code or CitY">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="236" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Depression</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Bipolar Disorder</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Generalized anxiety</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Cannabis Abuse</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="{% static 'assets/img/heroin.svg'%}" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-user-doctor"></i></div>
+            <div>
+              <h4 class="title">Therapist</h4>
+              <p class="description"> Start your journey towards inner peace today. Our Therapist are dedicated to empowering you with tools to manage stresss and improve your mental well-being</p>
+              <a href="{% url 'createroom' %}" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class=" fa-solid fa-head-side-virus"></i></div>
+            <div>
+              <h4 class="title">Self Help</h4>
+              <p class="description">Self-help refers to taking proactive steps to improve your psychological well-being independently. It is important as it empowers individuals to actively manage their mental health, providing a sense of control and contributing to overall well-being</p>
+              <a href="{% url 'home'%}" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div>
+              <h4 class="title">Heartbreak</h4>
+              <p class="description"> Experiencing heartbreak can have a significant impact on mental health. The emotional pain and distress can lead to feelings of sadness, anxiety and even depression</p>
+              <a href="{% url 'home'%}" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="{% static 'assets/img/depression.jpg'%}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p>
+              Plenus is designed to bridge the gap between those in need of medical assistance and medical practitioners. Since in the traditional setting its somewhat difficult to find a therapist, especially for those people suffering from depression and have suicidal thoughts, Plenus brings the help to them.
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Personalized support</h5>
+                  <p>Plenus offers tailored mental health resources and activities to address individuals needs fostering a sense of coonection and understanding</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Progress Tracking</h5>
+                  <p> Users can monitor their mental health journey track goals and celebrate achievements, promoting a sense of accomlishment and motivation</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Therapist Connection</h5>
+                  <p>The platform offers the option to connect with licensed therapist, making professional help more accessible and convenient for those who need it</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span></span>
+          <h2>Therapists</h2>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/head.jpg'%}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Individual</a></h3>
+              <p>Individuals and their mental health are deeply interconnected. How individuals manage their mental well-being, including practicing self-care and seeking support when needed, can significantly impact their overall quality of life and emotional resilience</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/couple.jpg'%}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="service-details.html" class="stretched-link">Couples</a></h3>
+              <p>The quality of couples' mental health significantly impacts their relationship, as conflicts and mental health challenges can strain trust and cooperation within partnerships. Strong mental well-being within couples often contributes to more harmonious and trusting relationships</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/cyc.jpg'%}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'home'%}" class="stretched-link">Psychiatrist</a></h3>
+              <p> Mental health professionals play a vital role in treating mental health disorders and improving individuals' well-being, offering crucial support and guidance in managing mental health challenges. Their expertise helps reduce the stigma associated with mental health issues and enhances overall mental health in society</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/image.png'%}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'home'%}" class="stretched-link">Family and friends</a></h3>
+              <p> Family and friends play a pivotal role in supporting mental health by providing emotional support and creating a sense of belonging, reducing the risk of mental health issues, and contributing to overall well-being Their presence fosters social connectedness, lowers anxiety and depression rates, and enhances self-esteem
+              </p>
+             </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/doctor.jpg'%}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'home'%}" class="stretched-link">Online Therapist</a></h3>
+              <p>  Online therapists provide the convenience of virtual counseling, making mental health support accessible from anywhere. They offer a range of therapeutic approaches to suit individual needs</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/social worker.jpg'%}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'home'%}" class="stretched-link">Clinical Social Worker</a></h3>
+              <p> A peer counselor is an individual with adequate experience about mental health challenges who provides support, understanding, and guidance to others facing similar issues, playing a crucial role in fostering emotional well-being and reducing stigma associated with mental health</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Call To Campus Students</h3>
+            <p> Taking care of your mental health is just as important as your academic succes. Remember, seeking support is a sign of strength, not weekness. Reach out, talk to someone, and lets foster a campus environment where well-being is valued by all</p>
+            <a class="cta-btn" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/calm.PNG'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3> Significance of mental health.</h3>
+            <p class="fst-italic">
+              When a person is mentally healthy, just like physical health, they are able to:
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Experience positive emotions</li>
+              <li><i class="bi bi-check"></i> Cope with callenges better</li>
+              <li><i class="bi bi-check"></i> Have a healthy and functional body .</li>
+              <li><i class="bi bi-check"></i> Maintain good relationships .</li>
+              <li><i class="bi bi-check"></i> Increased productivity .</li>
+              <li><i class="bi bi-check"></i> Overall happiness and satisfaction in both their lives and other people lives.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/girl.jpg'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>Impacts of mentall illness</h3>
+            <p class="fst-italic">
+              Those who experience mental illnesses experience a darker sort of reality
+            </p>
+            <p>
+                A weakened immune system and increased risk of cardiovascular diseases. Broken and unstable relationships. Unable to focus on tasks or solve problemss. Low resilience and increased stigma. An unsatisfactory life. Low productivity, negative economic growth
+                and lack of social cohesion in society.        
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/joun.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Introduction to journaling</h3>
+            <p> There is no right or wrong way to journal. It can be done in various forms such as traditional written journal bullet journal or even through art and creative expression</p>
+            <ul>
+              <li><i class="bi bi-check"></i> The key is to find a method that resonates with you</li>
+              <li><i class="bi bi-check"></i> Make journaling a regular part of your life .</li>
+              <li><i class="bi bi-check"></i> To experience its full benefits.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/value.png'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3> The value of connecting with people </h3>
+            <p class="fst-italic">
+              Socializing with people is of great importance for various aspects of human well-being and personal development.
+            </p>
+            <p>
+               Yet, nowadays its the most overlooked part of the human psyche because todays culture overvalues career and undervalues 
+               family and relationships.Overall, socializing is a fundamental aspect of being human. It enriches our lives, contributes to
+               our well-being and strengthen our connections with others
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span></span>
+          <h2>Book Session</h2>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <h4><sup>ksh </sup>0<span> / Session</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> Individual Cognitive Therapy</li>
+                <li><i class="bi bi-check"></i> Tailored to your needs</li>
+                <li><i class="bi bi-check"></i> CBT   focuses on identifying</li>
+                <li class="na"><i class="bi bi-x"></i> <span>Altering negative thoughts patterns</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>To promote positive behaviour</span></li>
+              </ul>
+              <a href="{% url 'home'%}" class="buy-btn">Book Now</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <h4><sup>ksh</sup>200<span> / Session</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> Group Art Theray session</li>
+                <li><i class="bi bi-check"></i> Engage in creative process</li>
+                <li><i class="bi bi-check"></i> To express emotions and enhance</li>
+                <li><i class="bi bi-check"></i> Self awareness while benefiting </li>
+                <li><i class="bi bi-check"></i> from group dynamic and mutual</li>
+              </ul>
+              <a href="{% url 'home'%}" class="buy-btn">Book Now</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>VIP Plan</h3>
+              <h4><sup>ksh</sup>800<span> / session</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> Online Mindfullness Meditation </li>
+                <li><i class="bi bi-check"></i> Join guided mindfulness sessions</li>
+                <li><i class="bi bi-check"></i> To cultivate awareness manage stress</li>
+                <li><i class="bi bi-check"></i> Foster of your space</li>
+                <li><i class="bi bi-check"></i> Online session can vary widely</li>
+              </ul>
+              <a href="{% url 'home'%}" class="buy-btn">Book Now</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/maulid.png'%}" class="testimonial-img" alt="">
+                <h3>Jacinta Wangari</h3>
+                <h4>Ceo &amp; Founder Plunus</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Plenus has transformed the way we approach mental health. Under the visionary leadership of CEO, We are making a real impact in peaoples lives. Their dedication and compassion drive our mission forward.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/mize.jpg'%}" class="testimonial-img" alt="">
+                <h3>Steve Ongera</h3>
+                <h4>Full Stuck Developer &amp; CEO InnovationHub Softwares</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  The developer at Plenus is nothing short of a codind wizard. Their technical prowess brings our mental health app to life, creating a seamless and user-friendly experiencefor all. Kudos to their innovation
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/omko.jpg'%}" class="testimonial-img" alt="">
+                <h3>Muthoni</h3>
+                <h4>Therapist</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  As a member of the Plenus Team I'm proud to work alongside individuals who genuinely care. The positive and supportive environment cultivated by our staff fosters collaborations and growth, making it a joy to come to work every day
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/steve.jpg'%}" class="testimonial-img" alt="">
+                <h3>Mize Khalfan</h3>
+                <h4>Freelancer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                   At Plenus our passion for making a difference is our drving force. Our staff is a tight-knit family, united by the shared goal of improving mental health accessibilty. Its an honor to contribute to this impavtful journey
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/mize.jpg'%}" class="testimonial-img" alt="">
+                <h3>Kwamboka Clare</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  The commitment of Plenus staff to our users well being is truely inspiring. Each day we work to gether to refine our apps features and content, ensuring that we are providing the best possible resources for mental health support
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span></span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How can i sign up for Plenus?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Simply download the app from appstore or playstore open it and follow the easy registration process.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Is Plenus a confidential platform?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Yes your privacy is our priority. All your data and interactions are kept confidential.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Are resources and articles written by proffesionals?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Absolutely we collaborate with mental health experts to ensure all content is accurate and realiable
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Can i use plenus Offline?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Yes you can access previously downloaded content and features offline
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How can i reach customer support?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Just visit the contact us section in the web application ore send an email to support@plenusapp.com
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="{% url 'home'%}" class="logo d-flex align-items-center">
+            <span>PLENUS</span>
+          </a>
+          <p>Welcome to Plenus - your trusted companion on your mental health journey. Our web application is designed with your well-being in mind, offering a safe space to explore resources connect with expert and find solace in supportive community</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://twitter.com/mtoto_wa_joho" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.facebook.com/gadafikenya/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/mtotowajoho/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/mtoto_wa_joho" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@mtotowajoho" class="linkedin"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+          
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            A356 Muranga Kiharu <br>
+            
+            <strong>Phone:</strong> +254 789 277 342<br>
+            <strong>Email:</strong> ofseaway@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright @ 2023<strong><span>|| PLENUS|| InnovationHub Softwares</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="{% url 'home'%}">Steve Ongera</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
